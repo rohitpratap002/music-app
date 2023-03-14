@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+/* body{
+    overflow: hidden;
+} */
+.head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+}
+.head h1{
+    font-size: 5rem;
+}
+.head p{
+    font-size: 2rem;
+}
+.visual{
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    
+}
+.circle{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 70vh;
+    width: 16.6%;
+}
+.cir{
+    height: 5rem;
+    width: 5rem;
+    max-height: 10vw;
+    max-width: 10vw;
+    border-radius: 50%;
+    position: relative;
+}
+.pads{
+    height: 25vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+}
+.pads .pad{
+    height: 100%;
+    width:16.6%;
+    cursor: pointer;
+}
+.pad:nth-child(1), .cr1{
+    background: #fd0100;
+}
+.pad:nth-child(2), .cr2{
+    background: #f76915;
+}
+.pad:nth-child(3), .cr3{
+    background: #eede04;
+}
+.pad:nth-child(4), .cr4{
+    background: #a0d636;
+}
+.pad:nth-child(5), .cr5{
+    background: #2fa236;
+}
+.pad:nth-child(6), .cr6{
+    background: #333ed4;
+}
+@keyframes updown {
+    0%{
+        bottom:0;
+    }
+    40%{
+        bottom: 90%;
+    }
+    100%{
+        bottom: 0%;
+    }
+}
